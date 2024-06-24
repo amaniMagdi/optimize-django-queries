@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if data %}
+    <ul>
+      {% for el in data %}
+        <li>{{ el }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <h2>No data</h2>
+  {% endif %}
+{% endblock content %}
